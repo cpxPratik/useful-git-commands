@@ -6,4 +6,10 @@ git branch -d <branch_name>
 git fetch origin --prune // [--dry-run]
 git remote prune origin
 
+# List git branches
+git branch -r
+git branch -a
+git remote show origin
+git ls-remote --heads origin
+
 
