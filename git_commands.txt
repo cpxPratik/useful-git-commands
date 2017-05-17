@@ -2,4 +2,8 @@
 git push origin --delete <branch_name>
 git branch -d <branch_name>
 
+# To clean-up old remote git branches
+git fetch origin --prune // [--dry-run]
+git remote prune origin
+
 
