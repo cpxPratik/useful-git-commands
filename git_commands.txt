@@ -12,4 +12,7 @@ git branch -a
 git remote show origin
 git ls-remote --heads origin
 
+# Remove cached tracking of files on git
+git rm -r --cached .
+
 
