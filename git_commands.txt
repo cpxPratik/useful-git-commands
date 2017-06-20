@@ -15,4 +15,8 @@ git ls-remote --heads origin
 # Remove cached tracking of files on git
 git rm -r --cached .
 
+# Checking out remote branch in local
+git fetch origin
+git branch -v -a
+git checkout -b test origin/test
 
