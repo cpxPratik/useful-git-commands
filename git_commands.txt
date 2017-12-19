@@ -20,3 +20,11 @@ git fetch origin
 git branch -v -a
 git checkout -b test origin/test
 
+# Reset previous commit without staging into the working directory
+git reset HEAD^
+
+# Reset previous commit with staging
+git reset --soft HEAD^
+
+# Reset to origin/master with staging
+git reset --soft origin/master
