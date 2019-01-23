@@ -1,3 +1,5 @@
+# useful-git-commands
+
 # Delete remote branch then delete local branch
 git push origin --delete <branch_name>
 git branch -d <branch_name>
