@@ -11,7 +11,7 @@ git branch -d <branch_name>
 
 ```sh
 git fetch origin --prune
-git fetch origin --prune --dry-run // dry run the command
+git fetch origin --prune --dry-run # dry run the command
 or
 git remote prune origin
 ```
