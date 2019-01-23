@@ -1,12 +1,16 @@
-# To delete remote branch then delete local branch
+# Delete remote branch then delete local branch
 git push origin --delete <branch_name>
 git branch -d <branch_name>
 
-# To clean-up old remote git branches
-git fetch origin --prune // [--dry-run]
+# Clean-up old remote git branches. IOW, prune tracking branches not on the remote
+git fetch origin --prune
+git fetch origin --prune --dry-run // dry run the command
+
+or
+
 git remote prune origin
 
-# List git branches
+# List git branches variations
 git branch -r
 git branch -a
 git remote show origin
@@ -28,3 +32,8 @@ git reset --soft HEAD^
 
 # Reset to origin/master with staging
 git reset --soft origin/master
+
+# Remove git tracked file which is now gitignored https://stackoverflow.com/a/19095988/2137210
+git rm --cached . -r
+git add .
+git commit -am 'Remove ignored file'
