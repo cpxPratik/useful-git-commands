@@ -70,6 +70,8 @@ git commit -am 'Remove ignored file'
 
 ## Merge branch with no common commits, IOW, with unrelated histories
 
+source: <https://stackoverflow.com/a/53663271/2137210>
+
 ```sh
 git pull origin <remote_branch_name> --allow-unrelated-histories
 ```
